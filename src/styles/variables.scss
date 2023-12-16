@@ -1,0 +1,21 @@
+$base-lightblue: #CDF5FF;
+$base-blue: #6cd0f5;
+$base-gray:#939CB0;
+$box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+$border-radius: 50px;
+
+@mixin box {
+    padding: 30px;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+}
+
+@mixin button-hover {
+    background-color: $base-blue;
+    color: white;
+    -webkit-box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+    box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}

@@ -1,0 +1,28 @@
+@import '../../../styles/variables.scss';
+
+.header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+
+        .logo {
+            svg {
+            height: 55px;
+            width: 55px;
+            }
+        
+            margin-right: 20px;
+        }
+        .title {
+            text-transform: uppercase;
+            font-size: 20px;
+            font-weight: 700;
+            color: $base-blue;
+        }
+    }
+}

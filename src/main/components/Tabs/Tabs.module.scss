@@ -1,0 +1,32 @@
+@import '../../../styles/variables.scss';
+
+.tabs {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+
+    button {
+        padding: 10px 24px;
+        background-color: transparent;
+        border-radius: $border-radius;
+        border: 2px solid $base-blue;
+        color: $base-blue;
+        font-size: 14px;
+        font-weight: 700;
+
+        &:hover {
+            @include button-hover();
+        }
+    }
+
+    .activeTab {
+        background-color: $base-blue;
+        color: white;
+
+        &:hover {
+            background-color: white;
+            color: $base-blue;
+
+        }
+    }
+}

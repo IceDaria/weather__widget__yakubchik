@@ -1,0 +1,53 @@
+@import '../../../styles/variables.scss';
+
+.Geo {
+    display: flex;
+
+    .search_bar {
+        display: flex;
+        align-items: center;
+        padding: 6px 24px;
+        border-radius: $border-radius;
+        border: 2px solid $base-blue;
+
+        input {
+            background-color: transparent;
+            border: none;
+            outline: 0;
+
+            &::placeholder {
+                color: $base-blue;
+                font-size: 14px;
+            }
+
+            &:focus::placeholder {
+                opacity: 40%;
+            }
+        }
+        
+        .button {
+            border: 0;
+            background-color: transparent;
+            svg {
+                fill: $base-blue;
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+
+    .myGeo {
+        padding: 10px 24px;
+        margin-left: 20px;
+        background-color: transparent;
+        border-radius: $border-radius;
+        border: 2px solid $base-blue;
+        color: $base-blue;
+        font-size: 14px;
+
+        &:hover {
+            @include button-hover();
+        }
+    }
+
+}

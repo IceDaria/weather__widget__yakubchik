@@ -1,0 +1,45 @@
+@import '../../../styles/variables.scss';
+
+.today {
+    @include box();
+    max-width: 400px;
+    border-radius: $border-radius;
+    width: 100%;
+
+    .top_info {
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .bottom_info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 25px;
+
+        .wrapper {
+
+            display: flex;
+            justify-content: space-between;
+
+            .temp {
+                font-size: 96px;
+                font-weight: 700;
+                color: $base-blue;  
+            }
+
+            svg {
+                width: 120px;
+                height: 120px;
+            }
+        }
+
+        .theday {
+            font-size: 40px;
+            font-weight: 500px;
+        }
+    }
+}
