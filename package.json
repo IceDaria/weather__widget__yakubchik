@@ -22,6 +22,7 @@
   "repository": {
     "url": ""
   },
+  "author": "IceDaria",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
